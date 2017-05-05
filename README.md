@@ -1,2 +1,2 @@
 # JavaPerformanceTests
-Alguns testes de performance em Java. Demonstrando como o conhecimento da arquitetura da JVM pode gerar um código otimizado.
+Some performance tests in Java. Showing that a good knowledge of the JVM architecture can lead to better code.
