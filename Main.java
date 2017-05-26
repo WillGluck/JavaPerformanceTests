@@ -122,7 +122,7 @@ public class Main {
         testeFalseSharing(2);
         endTime = System.currentTimeMillis();
         teste2 = endTime- beginTime;
-        System.out.println("Dessa vez levou " + teste2 + "ms. Um aumento enorme pq as variáveis estão no mesmo bloco de memória.");
+        System.out.println("Dessa vez levou " + teste2 + "ms. Um aumento enorme pq as variáveis estão no mesmo bloco de memória e são thread safe.");
         System.in.read();
 
         System.out.println("Agora vamos fazer a mesma coisa com variáveis voláteis que estão afastadas no código.");
@@ -132,7 +132,8 @@ public class Main {
         testeFalseSharing(3);
         endTime = System.currentTimeMillis();
         teste3 = endTime - beginTime;
-        System.out.println("Finalizou em " + teste3 + "ms. Variáveis afastadas no código acabaram ficando em blocos de memória separados.");
+        System.out.println("Finalizou em " + teste3 + "ms. Uma redução de " + (teste2 - teste3) + "ms, ou " + df.format((100.0 - ((100.0 / teste2) * teste3))) + "%.");
+        System.out.println("Variáveis afastadas no código acabaram ficando em blocos de memória separados.");
         System.out.println("Com isso a notificação de invalidate não afetou o acesso as demais variáveis e o tempo melhorou =)");
         System.in.read();
         System.out.println("Moral da história. Ao trabalhar com multi threads deve-se ter cuidado com o posicionamento das variáveis na memória.");
