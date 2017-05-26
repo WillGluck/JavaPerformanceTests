@@ -69,7 +69,7 @@ public class Main {
         //SIZE
         System.out.println("-------------------------------TESTE DE TAMANHO DE LOOPS E MÉTODOS------------------------------------\n");
         System.out.println("Primeiro vamos executar um método que executa 70 operações matemáticas em um único loop de 1 milhão de iterações");
-        System.out.println("Ele tem 72 linhas, 69 delas em um único loop.");
+        System.out.println("Ele tem 72 linhas.");
         System.in.read();
         System.out.println("Iniciando...");
         beginTime = System.currentTimeMillis();
@@ -115,7 +115,7 @@ public class Main {
         System.out.println("Deu. Levou " + teste1 + "ms");
         System.in.read();
 
-        System.out.println("Agora vamos fazer a mesma coisa variáveis voláteis que estão próximas no código.");
+        System.out.println("Agora vamos fazer a mesma coisa com variáveis voláteis que estão próximas no código.");
         System.in.read();
         System.out.println("Iniciando...");
         beginTime = System.currentTimeMillis();
@@ -136,7 +136,7 @@ public class Main {
         System.out.println("Com isso a notificação de invalidate não afetou o acesso as demais variáveis e o tempo melhorou =)");
         System.in.read();
         System.out.println("Moral da história. Ao trabalhar com multi threads deve-se ter cuidado com o posicionamento das variáveis na memória.");
-        System.out.println("Manter os valores classes separadas ajudaria a evitar false sharing.");
+        System.out.println("Manter os valores em classes separadas ajudaria a evitar false sharing.");
 
         System.out.println("Por hoje é só pessoal");
 
